@@ -1,26 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { StoreProvider } from 'easy-peasy';
+import Container from 'react-bootstrap/Container';
+
+import Main from './components/Pages/Index/Main.component';
+import ScoreBoardStore from './state/ScoreBoardStore';
+
+if (window.Cypress) {
+  window.store = ScoreBoardStore;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p> TAŞ KAĞIT MAKAS OYUNU</p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
-
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <StoreProvider store={ScoreBoardStore}>
+        <div className="root">
+          <Container fluid="md">
+            <Main />
+          </Container>
+        </div>
+      </StoreProvider>
   );
 }
 
