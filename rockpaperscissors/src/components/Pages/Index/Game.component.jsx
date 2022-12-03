@@ -34,8 +34,8 @@ function Game() {
     setshouldCheckWinner(false);
     setcomputerSelected(resultOfGame.computerSelected);
 
-    if (resultOfGame.winner === 'Berabere Kaldınız...') {
-      setWinner('Berabere Kaldınız...');
+    if (resultOfGame.winner === 'Uavgjort') {
+      setWinner('Uavgjort');
       setShowWinnerModal(true);
     } else {
       setWinner(resultOfGame.winner);

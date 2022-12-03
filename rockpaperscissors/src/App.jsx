@@ -11,13 +11,13 @@ if (window.Cypress) {
 
 function App() {
   return (
-      <StoreProvider store={ScoreBoardStore}>
-        <div className="root">
-          <Container fluid="md">
-            <Main />
-          </Container>
-        </div>
-      </StoreProvider>
+    <StoreProvider store={ScoreBoardStore}>
+      <div className="root">
+        <Container fluid="md">
+          <Main />
+        </Container>
+      </div>
+    </StoreProvider>
   );
 }
 

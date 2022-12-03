@@ -1,0 +1,31 @@
+{
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "globals": {
+    "cy": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-filename-extension": "warn",
+    "no-use-before-define": "warn",
+    "import/no-unresolved": "warn",
+    "no-param-reassign": "warn",
+    "no-undef": "warn",
+    "import/extensions": [
+      "warn",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  }
+}

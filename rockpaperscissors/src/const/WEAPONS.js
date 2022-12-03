@@ -1,4 +1,4 @@
-import { ReactComponent as HandScissors } from '../assets/scissors1.svg';
+import { ReactComponent as HandScissors } from '../assets/scissors.svg';
 import { ReactComponent as HandRock } from '../assets/rock1.svg';
 import { ReactComponent as HandPaper } from '../assets/paper.svg';
 
