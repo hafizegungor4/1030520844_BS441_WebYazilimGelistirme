@@ -5,7 +5,13 @@ import {Route, Routes} from "react-router-dom";
 import Game from './components/Game'
 import AgainstTime from "./components/AgainstTime";
 
+
+const items = [
+    { id: 1, label: 'Home', url: '/' },
+]
+
 function App() {
+
   return (
     <div className="App">
         <Routes>
